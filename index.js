@@ -1,8 +1,8 @@
 //LabThree Class Activity - Using if/else or switch statements produce percentage marking code.
-//set parameters
-let grade = 12
-let score
+//set variables
+let grade = 50
 
+//set else/if statements
 if (grade >= 85 && grade <= 100) {
     console.log("A+");
 } else if (grade >= 80 && grade <= 84) {
@@ -23,5 +23,29 @@ if (grade >= 85 && grade <= 100) {
     console.log("D")
 } else if (grade >= 0 && grade <= 45) {
     console.log("E")
-}
-
+}  
+//create switch block for description
+switch(grade){
+    case "A+":
+    case "A":
+    case "A-":
+    console.log("Pass with Distinction");
+    break;
+    case "B+":
+    case "B":
+    case "B-":
+    console.log("Pass with Merit");
+    break;
+    case "C+":
+    case "C":
+    console.log("Pass")
+    break;
+    case "D":
+    case "E":
+    console.log("Fail")
+    break;
+    default:
+    console.log("Please enter percentage..")
+    break;
+    }
+    
