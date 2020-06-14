@@ -1,0 +1,94 @@
+Lab Three - 17/03
+
+This Lab took me a while to get functioning as required. I did a fair bit of reading on the SDV503 git book chapters (Kahwaji, 2020) around switch 
+statements to try and figure out how to get the switch and if statements to co-operate. In the end, it was practicing, trial and error, and knowledge 
+from the support people around me - my tutors and class mates - that helped me to write it cohesively and create the end result in index.js.
+
+I know now that I'm confident in writing a switch statement and the structure required for a switch statement, as well as what it's uses are for adding 
+additional context to any given value. 
+This would include creating a variable for the switch statement to compare, ensuring breaks between cases so that JS stops executing the code and
+ensuring a default output if the variable does not match any given case. This is outlined in the example code from the SDV503 book below.
+
+I still have a lot to learn but I am becoming more confident in my abilities to understand the concepts required. All of the concepts I've learned so far
+will be valuable for my career prospects as well as future assessments for SDV503.
+
+
+
+
+
+
+
+---------example code------------
+
+const person = 'Joe';
+switch (person) {
+  case 'Jane':
+    console.log('Hi Jane');
+    break;
+  case 'John':
+    console.log('Hi John');
+    break;
+  case 'Joe':
+    console.log('Hi Joe');
+    break;
+  case 'Mary':
+    console.log('Hi Mary');
+    break;
+  default:
+    console.log('Hi');
+    break;
+}
+
+
+----------practice code----------
+//const gradeM = (grade) => grade
+/*function returns the grade output but not grade description.
+
+Not sure how to introduce the switch statement at this point.
+As from earlier lesson introducing a new variable to create another parameter confuses the switch statement
+
+** Added (grade) to switch console.log
+**introducing a new variable for the switch statement
+(returns the value for grade instead of the string value, unable to link cases to 'if' parameters)
+let gradeD = grade 
+const gradeM = (grade, gradeD) => grade + gradeD
+if (grade >= 85 && grade <= 100) {
+    console.log(grade + ", A+")                                                      99, A+
+switch (gradeD) {
+    case grade + ", A+":
+        console.log(grade + " Pass with Distinction")                                (default "Please enter a percentage...")
+        
+        console.log(gradeM(grade))                                                   NaN
+
+   >>> Not what we want.   
+
+**Putting the switch statement within the function returns undefined
+const gradeM = (grade) => {switch (grade) {
+    case "A+":
+    case "A":
+    case "A-":
+        console.log(grade + " Pass with Distinction"); //description for grades A- to A+ with grade
+        break;
+      case "B+":
+        case "B":
+        case "B-":
+            console.log(grade + " Pass with Merit"); //description for grades B- to B+ with grade
+            break;
+        case "C+":
+        case "C":
+            console.log(grade + " Pass") //description for grades C - C+ with grade
+            break;
+        case "D":
+        case "E":
+            console.log(grade + " Fail")//description for grades D & E with grade
+            break;
+        default:
+            console.log("Please enter percentage..") //default value
+            break;}
+    }
+
+
+
+
+References
+Ali Kahwaji. (2020). Switch Statement. SDV503. https://hellodeveloper2020.gitbook.io/sdv503/switch-statement
